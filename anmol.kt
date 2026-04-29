@@ -1,4 +1,3 @@
-```Kotlin
 fun main() {
     val person = Person("Anmol", 17, arrayOf("Coding", "Traveling", "Cooking"))
     person.display()
@@ -15,5 +14,3 @@ class Person(name: String, age: Int, hobby: Array<String>) {
         println("Hobbies: ${hobby.joinToString(", ")}")
     }
 }
-
-```
