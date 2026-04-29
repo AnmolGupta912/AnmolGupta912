@@ -1,19 +1,30 @@
+## My life snippet
+
+```output
+Name: Anmol
+Age: 17
+Hobbies: Programming, Learing new tech, Writing, Reading
+```
+
 ```Kotlin
 fun main() {
-    val person = Person("Anmol", 17, arrayOf("Coding", "Traveling", "Cooking"))
+    val person = Person(
+        name = "Anmol",
+        age = 17,
+        hobbies = listOf("Programming", "Learing new tech", "Writing", "Reading")
+    )
     person.display()
 }
 
-class Person(name: String, age: Int, hobby: Array<String>) {
-    var name: String = name
-    var age: Int = age
-    var hobby: Array<String> = hobby
-
+class Person(
+    val name: String,
+    val age: Int,
+    val hobbies: List<String>
+) {
     fun display() {
         println("Name: $name")
         println("Age: $age")
-        println("Hobbies: ${hobby.joinToString(", ")}")
+        println("Hobbies: ${hobbies.joinToString(", ")}")
     }
 }
-
 ```
